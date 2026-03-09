@@ -138,7 +138,7 @@ install_deps() {
       xorg-xev xorg-xprop xorg-xdpyinfo xorg-xauth
       libx11 libxft libxinerama freetype2 fontconfig
       feh xdg-user-dirs
-      ttf-dejavu ttf-liberation noto-fonts git vim
+      ttf-dejavu ttf-liberation noto-fonts ttf-jetbrains-mono vim
     )
     $SUDO pacman -Syu --needed --noconfirm "${pkgs[@]}"
     ;;
@@ -151,7 +151,7 @@ install_deps() {
       libx11-dev libxft-dev libxinerama-dev
       libfreetype6-dev libfontconfig1-dev
       feh xdg-user-dirs
-      fonts-dejavu fonts-liberation git vim
+      fonts-dejavu fonts-liberation fonts-jetbrains-mono vim
     )
     $SUDO apt-get install -y "${pkgs[@]}"
     ;;
@@ -165,7 +165,7 @@ install_deps() {
       libX11-devel libXft-devel libXinerama-devel
       freetype-devel fontconfig-devel
       feh xdg-user-dirs
-      dejavu-fonts-all liberation-fonts git vim
+      dejavu-fonts-all liberation-fonts jetbrains-mono-fonts vim
     )
     $SUDO dnf install -y "${pkgs[@]}"
     ;;
@@ -180,7 +180,7 @@ install_deps() {
       libX11-devel libXft-devel libXinerama-devel
       freetype2-devel fontconfig-devel
       feh xdg-user-dirs
-      dejavu-fonts liberation-fonts git vim
+      dejavu-fonts liberation-fonts jetbrains-mono-fonts vim
     )
     $SUDO zypper install -y --no-recommends "${pkgs[@]}"
     ;;
