@@ -76,7 +76,9 @@ detect_distro() {
   . /etc/os-release
 
   local id="${ID,,}"
-  local id_like="${ID_LIKE,,:-}"
+  local id_like
+  id_like="${ID_LIKE:-}"
+  id_like="${id_like,,}"
 
   case "$id" in
   arch | manjaro | endeavouros | artix | garuda | cachyos)
